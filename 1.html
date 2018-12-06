@@ -3,6 +3,17 @@
 <head>
 <title>WEB1-html</title>
 <meta charset="utf-8">
+  
+  
+<title>Your Website Title</title>
+    <!-- You can use Open Graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+  <meta property="og:url"           content="https://zzangjames.github.io/web1/" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Your Website Title" />
+  <meta property="og:description"   content="Your description" />
+  <meta property="og:image"         content="https://zzangjames.github.io/web1/web.jpg" />
+  
 </head>
 <body>
   <h1><a href="index.html">WEB</a>
@@ -20,5 +31,22 @@ HTML describes the structure of a web page semantically and originally included 
 <p style="margin-top:45px;">HTML elements are the building blocks of HTML pages. WIth HTML constructs, images and other objects, such as interactive forms, mat be imbedded into the rendered page.
 It provides a means to create structured documents by denotinf structural semantics for text such as headings, paragraphs, lists, links, quotes and orthe items.
 HTML elements are delineated by tags,written using angle brackets.</p>
+  
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your share button code -->
+  <div class="fb-share-button"
+    data-href="https://zzangjames.github.io/web1/"
+    data-layout="button_count">
+  </div>
+  
 </body>
 </html>
